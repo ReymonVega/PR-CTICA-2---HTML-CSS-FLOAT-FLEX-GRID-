@@ -1,0 +1,110 @@
+/* MEDIA QUERY 768 PX */
+@media (max-width: 768px ){
+    .navegacionPrincipal{
+        float: left;
+    }
+    
+    .tituloPuntual{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+    .tituloHijoPuntual{
+        
+        margin-left: 5rem;
+        
+    }
+    /* SEGUNDA PARTE */
+
+    .sillas img,
+    .barraBar img{
+        float: none;
+        width: 100%;
+        height: 480px;
+    }
+   
+    /*cAPAZ SILLAS O  */
+    .barraBar p{
+        width: 100%;
+    }
+
+    /* Carta Parte 3 */
+
+    .cartaMenus .menu1{
+        grid-row-start: span 3;
+    }
+
+    .cartaMenus .imagen1,
+    .cartaMenus .imagen2{
+        grid-column-start: span 2;
+    
+    }
+    .imagenesJuntas{
+        
+        margin-left: 90px;
+        
+    }
+    /* Galeria Imatges */
+   
+
+}
+
+@media (max-width: 576px ){
+    .navegacionPrincipal{
+        float: left;
+    }
+    
+    .tituloPuntual{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+    }
+    .tituloHijoPuntual{
+        
+        margin-left: 5rem;
+        
+    }
+    /* SEGUNDA PARTE */
+    
+    .sillas img,
+    .barraBar img{
+        float: none;
+        width: 100%;
+        height: 380px;
+    }
+   
+    .mainPadre .tituloCarta{
+        text-align: center;
+    }
+    /*cAPAZ SILLAS O  */
+    .barraBar p{
+        width: 100%;
+    }
+
+    .sobreNosaltres h2{
+        text-align: center;
+    }
+    /* Carta Parte 3 */
+
+    .cartaMenus{
+        grid-template-columns: 200px 1fr;
+    }
+
+
+    /* Galeria Imatges */
+
+    .mainPadre .galeriaDeImatges{
+        text-align: center;
+    }
+    .imagenesJuntas{
+        flex-direction: column;
+        margin-left: 10px;
+        
+    }
+
+    .imagenesJuntas img{
+        width: 95%;
+        height: 70%;
+    }
+    
+}

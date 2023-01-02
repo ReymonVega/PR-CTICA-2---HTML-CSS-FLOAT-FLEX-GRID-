@@ -1,237 +1,296 @@
-body{
-    margin: 0 auto;
-    font-size: 16px;
+/**/
+body {
+  margin: 0 auto;
+  font-size: 16px;
 }
 
 /*TItulos Principales H2*/
-
-
-.navegacion{
-    display: flex;
-    position: sticky;
-    top: 0px;
-}
-.navBackGround{
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    
-    
-    
-}
-
-.navegacionPrincipal{
-    background-color: black;
-    padding: 1.5rem;
-    float: right;
-}
-
-.navegacionPrincipal a{
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-}
-
-.navegacionPrincipal a:hover{
-    background-color: beige;
-    color: black;
-   text-decoration: underline;
-}
-
-.sectionPadre{
-    width: 100%;
-    height:650px;
-    background-image: url(../img/header.jpg);
-    background-position: center;
-    background-size: cover;
-    margin-bottom: 4rem;
-
-
-}
-
-.tituloPuntual{
-    color: white;
-    
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 180px;
-    justify-content: center;
-}
-
-.tituloPuntual h2{
-    font-size: 45px;
-    font-weight: 400;
-    
-}
-
-.tituloPuntual h2 span{
-    
-    font-weight: bold;
-    
-}
 /*SGUNDA PARTE*/
-.mainPadre{
-    max-width: 1000px;
-    margin: 0 auto;
+/*MIXINSSSS*/
+/*NAVEGACION PRINCIPAL*/
+.navegacion {
+  /*Aplicando la funcion mixins*/
+  display: flex;
+  position: sticky;
+  top: 0px;
 }
 
-.sobreNosaltres{
-    margin-bottom: 13rem;
+.navBackGround {
+  /*Aplicando mixi nav_back*/
+  background-color: black;
+  width: 100%;
+  height: 100%;
 }
 
-
-.sillas p{
-   position: relative;
-   top: 1rem;
-   left: 2rem;
-   text-align: justify;
-   font-size: 18px;
-  
+.navegacionPrincipal {
+  background-color: black;
+  padding: 1.5rem;
+  float: right;
+  /*Anidaciones 1*/
+  /*Anidacion 2*/
+}
+.navegacionPrincipal a {
+  text-decoration: none;
+  color: #fff;
+  padding: 20px;
+}
+.navegacionPrincipal a:hover {
+  background-color: beige;
+  color: black;
+  text-decoration: underline;
 }
 
-.sillas img{
-    border-radius: 1rem;
-    float: left;
-
+.sectionPadre {
+  width: 100%;
+  height: 650px;
+  background-image: url(../img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 4rem;
 }
 
-.barraBar{
-    clear: both;
+.tituloPuntual {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 180px;
+  justify-content: center;
+  /*Anidacion 3*/
+  /*Anidacion 4*/
+}
+.tituloPuntual h2 {
+  font-size: 45px;
+  font-weight: 400;
+}
+.tituloPuntual span {
+  font-weight: bold;
 }
 
-.barraBar img{
-    float: right;
-    border-radius: 1rem;
+.mainPadre {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.barraBar p{
-    width: 57%;
-    position: relative;
-   top: 2rem;
-   text-align: justify;
-   font-size: 18px;
-   
+.sobreNosaltres {
+  margin-bottom: 13rem;
+}
+
+.sillas p {
+  position: relative;
+  top: 1rem;
+  left: 2rem;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.sillas img {
+  border-radius: 1rem;
+  float: left;
+}
+
+.barraBar {
+  clear: both;
+  /*Anidacion 5*/
+  /*Anidacion 6*/
+}
+.barraBar img {
+  float: right;
+  border-radius: 1rem;
+}
+.barraBar p {
+  width: 57%;
+  position: relative;
+  top: 2rem;
+  text-align: justify;
+  font-size: 18px;
 }
 
 /*SECTION 2*/
-.gridHijo{
-    font-size: 20px;
-    padding: 1px;
-    color: white;
-    text-align: center;
-    background-color: rgb(19, 19, 109);
-    margin-bottom: 2rem;
+.gridHijo {
+  font-size: 20px;
+  padding: 1px;
+  color: white;
+  text-align: center;
+  background-color: rgb(19, 19, 109);
+  margin-bottom: 2rem;
 }
 
-.cartaMenus .menu1{
-    grid-row-start: span 2;
+.cartaMenus .menu1, .cartaMenus .menu2 {
+  grid-row-start: span 2;
 }
 
-.contenedorContenido{
-    grid-column-start: span 2;
-    font-size: 18px;
+.contenedorContenido {
+  grid-column-start: span 2;
+  font-size: 18px;
 }
 
-.cartaMenus{
-    display: grid;
-    grid-template-columns: 200px 1fr 1fr;
-    margin-bottom: 15px;
-    gap: 2rem;
-
+.cartaMenus {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  margin-bottom: 15px;
+  gap: 2rem;
 }
 
 .cartaMenus .imagen1 img,
-.cartaMenus .imagen2 img{
-    width: 100%;
-    height: 100%;
-
+.cartaMenus .imagen2 img {
+  width: 100%;
+  height: 100%;
 }
 
-.menu1{
-    border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-    
+.menu1, .menu2 {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.cartaMenus2{
-    display: flex;
-    
+.cartaMenus2 {
+  display: flex;
 }
 
-.menu2{
-    border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 350px;
+.menu2 {
+  /*Utilizando el "extend" */
+  width: 300px;
+  height: 350px;
 }
 
-.imagenesJuntas{
-    
-    width: 100%;
-    margin: 0 auto;
-    gap: 1rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
+.imagenesJuntas {
+  width: 100%;
+  margin: 0 auto;
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
-
-.imagenesJuntas img{
-
-    flex: auto;
-    width: 23%;
-    height: 180px;
-   
+.imagenesJuntas img {
+  width: 238px;
+  height: 180px;
 }
 
 .imagenesJuntas img:nth-child(1),
 .imagenesJuntas img:nth-child(4),
 .imagenesJuntas img:nth-child(5),
-.imagenesJuntas img:nth-child(8){
-    filter: brightness(50%);
+.imagenesJuntas img:nth-child(8) {
+  filter: brightness(50%);
 }
 
-.imagenesJuntas img:hover{
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
-    padding: 5px;
-    filter: brightness(50%);
+.imagenesJuntas img:hover {
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.48);
+  padding: 5px;
+  filter: brightness(50%);
 }
 
+.parteAbajo, .parteAbajo .info {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
 
+.parteAbajo .info {
+  display: flex;
+  gap: 1rem;
+  /*Segundo Extend*/
+}
 
+.info img {
+  width: 18px;
+  height: 15px;
+  display: flex;
+  margin-top: 18px;
+}
 
+.parteAbajo .restaurante, .parteAbajo .info {
+  margin: 0 20px;
+}
 
-
- .parteAbajo{
-    background-color: black;
-    color: white;
+/* MEDIA QUERY 768 PX */
+@media (max-width: 768px) {
+  .navegacionPrincipal {
+    float: left;
+  }
+  .tituloPuntual {
     display: flex;
-    justify-content: space-between;
-    
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+  .tituloHijoPuntual {
+    margin-left: 5rem;
+  }
+  /* SEGUNDA PARTE */
+  .sillas img,
+  .barraBar img {
+    float: none;
+    width: 100%;
+    height: 480px;
+  }
+  /*cAPAZ SILLAS O  */
+  .barraBar p {
+    width: 100%;
+  }
+  /* Carta Parte 3 */
+  .cartaMenus .menu1, .cartaMenus .menu2 {
+    grid-row-start: span 3;
+  }
+  .cartaMenus .imagen1,
+  .cartaMenus .imagen2 {
+    grid-column-start: span 2;
+  }
+  .imagenesJuntas {
+    margin-left: 90px;
+  }
+  /* Galeria Imatges */
 }
-
-.parteAbajo .info{
+@media (max-width: 576px) {
+  .navegacionPrincipal {
+    float: left;
+  }
+  .tituloPuntual {
     display: flex;
-    gap: 1rem;
-    margin: 0 20px;
+    flex-direction: column;
+    margin-left: 2rem;
+  }
+  .tituloHijoPuntual {
+    margin-left: 5rem;
+  }
+  /* SEGUNDA PARTE */
+  .sillas img,
+  .barraBar img {
+    float: none;
+    width: 100%;
+    height: 380px;
+  }
+  .mainPadre .tituloCarta {
+    text-align: center;
+  }
+  /*cAPAZ SILLAS O  */
+  .barraBar p {
+    width: 100%;
+  }
+  .sobreNosaltres h2 {
+    text-align: center;
+  }
+  /* Carta Parte 3 */
+  .cartaMenus {
+    grid-template-columns: 200px 1fr;
+  }
+  /* Galeria Imatges */
+  .mainPadre .galeriaDeImatges {
+    text-align: center;
+  }
+  .imagenesJuntas {
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .imagenesJuntas img {
+    width: 95%;
+    height: 70%;
+  }
 }
 
-.info img{
-    width: 18px;
-    height: 15px;
-    display: flex;
-    margin-top: 18px;
-}
-
-.parteAbajo .restaurante{
-    margin: 0 20px;
-} 
+/*# sourceMappingURL=styles.css.map */

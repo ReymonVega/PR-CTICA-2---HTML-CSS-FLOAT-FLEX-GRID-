@@ -1,0 +1,20 @@
+/**/
+$font_rem: 16px;
+
+
+body{
+    margin: 0 auto;
+    font-size: $font_rem;
+}
+
+/*TItulos Principales H2*/
+/*SGUNDA PARTE*/
+@import 'navbar';
+@import 'main';
+@import 'footer';
+@import 'querys';
+
+
+
+
+ 

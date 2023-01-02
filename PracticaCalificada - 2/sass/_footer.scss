@@ -1,0 +1,25 @@
+.parteAbajo{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.parteAbajo .info{
+    display: flex;
+    gap: 1rem;
+    /*Segundo Extend*/
+    @extend .parteAbajo,.restaurante;
+}
+
+.info img{
+    width: 18px;
+    height: 15px;
+    display: flex;
+    margin-top: 18px;
+}
+
+.parteAbajo .restaurante{
+    margin: 0 20px;
+} 

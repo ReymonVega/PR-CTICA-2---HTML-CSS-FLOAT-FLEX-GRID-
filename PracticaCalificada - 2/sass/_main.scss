@@ -1,0 +1,131 @@
+.mainPadre{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.sobreNosaltres{
+    margin-bottom: 13rem;
+}
+
+
+.sillas p{
+   position: relative;
+   top: 1rem;
+   left: 2rem;
+   text-align: justify;
+   font-size: 18px;
+  
+}
+
+.sillas img{
+    border-radius: 1rem;
+    float: left;
+
+}
+
+.barraBar{
+    clear: both;
+
+    /*Anidacion 5*/
+    img {
+        float: right;
+        border-radius: 1rem;
+    }
+    /*Anidacion 6*/
+    p {
+        width: 57%;
+        position: relative;
+        top: 2rem;
+        text-align: justify;
+        font-size: 18px;
+    }
+}
+
+/*SECTION 2*/
+.gridHijo{
+    font-size: 20px;
+    padding: 1px;
+    color: white;
+    text-align: center;
+    background-color: rgb(19, 19, 109);
+    margin-bottom: 2rem;
+}
+
+.cartaMenus .menu1{
+    grid-row-start: span 2;
+}
+
+.contenedorContenido{
+    grid-column-start: span 2;
+    font-size: 18px;
+}
+
+.cartaMenus{
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    margin-bottom: 15px;
+    gap: 2rem;
+
+}
+
+.cartaMenus .imagen1 img,
+.cartaMenus .imagen2 img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.menu1{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+.cartaMenus2{
+    display: flex;
+    
+}
+
+.menu2{
+    /*Utilizando el "extend" */
+    @extend .menu1;
+    width: 300px;
+    height: 350px;
+}
+
+.imagenesJuntas{
+    
+    width: 100%;
+    margin: 0 auto;
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+
+.imagenesJuntas img{
+
+    width: 238px;
+    height: 180px;
+   
+}
+
+.imagenesJuntas img:nth-child(1),
+.imagenesJuntas img:nth-child(4),
+.imagenesJuntas img:nth-child(5),
+.imagenesJuntas img:nth-child(8){
+    filter: brightness(50%);
+}
+
+.imagenesJuntas img:hover{
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    padding: 5px;
+    filter: brightness(50%);
+}
